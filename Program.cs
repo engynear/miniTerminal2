@@ -11,6 +11,7 @@ namespace miniTerminal2
         private static int globalDepth;
         private static string line = "    ";
         private static string lineStart = "└───";
+        private static string fileName;
 
         static void printSpaces(int count)
         {
@@ -27,7 +28,7 @@ namespace miniTerminal2
 
             foreach (var dirInfo in dir.GetDirectories())
             {
-                printSpaces(depth);
+                printSpaces(depth + 1);
                 Console.WriteLine("[" + dirInfo.Name + "]");
                 if (depth < globalDepth)
                 {
@@ -37,7 +38,7 @@ namespace miniTerminal2
 
             foreach (var fileInfo in dir.GetFiles())
             {
-                printSpaces(depth);
+                printSpaces(depth + 1);
                 Console.WriteLine(fileInfo.Name + " (" + (fileInfo.Length / 8) + " B)");
             }
 
@@ -50,6 +51,9 @@ namespace miniTerminal2
             if (!dir.Exists) throw new ArgumentException("Incorrect directory");
             Console.Write("Enter depth: ");
             globalDepth = (int)Int32.Parse(Console.ReadLine());
+            Console.WriteLine(dir.Name);
+
+            fileName = dir.Name + DateTime.Now.ToString();
 
             printingFiles(dir, 0);
         }
