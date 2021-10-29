@@ -8,24 +8,31 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\drtta\\.nuget\\packages\\": {}
+    "C:\\Users\\engyn\\.nuget\\packages\\": {},
+    "E:\\VisualStudio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\drtta\\Google Диск\\programming\\HSE\\C#\\miniTerminal2\\miniTerminal2.csproj",
+      "projectUniqueName": "C:\\Users\\engyn\\source\\repos\\miniTerminal2\\miniTerminal2\\miniTerminal2.csproj",
       "projectName": "miniTerminal2",
-      "projectPath": "C:\\Users\\drtta\\Google Диск\\programming\\HSE\\C#\\miniTerminal2\\miniTerminal2.csproj",
-      "packagesPath": "C:\\Users\\drtta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\drtta\\Google Диск\\programming\\HSE\\C#\\miniTerminal2\\obj\\",
+      "projectPath": "C:\\Users\\engyn\\source\\repos\\miniTerminal2\\miniTerminal2\\miniTerminal2.csproj",
+      "packagesPath": "C:\\Users\\engyn\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\engyn\\source\\repos\\miniTerminal2\\miniTerminal2\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "E:\\VisualStudio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\drtta\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\engyn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

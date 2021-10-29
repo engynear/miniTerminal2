@@ -29,3 +29,4 @@ C:\Users\drtta\Google Диск\programming\HSE\C#\miniTerminal2\obj\Debug\net5.0
 C:\Users\drtta\Google Диск\programming\HSE\C#\miniTerminal2\obj\Debug\net5.0\ref\miniTerminal2.dll
 C:\Users\drtta\Google Диск\programming\HSE\C#\miniTerminal2\obj\Debug\net5.0\miniTerminal2.pdb
 C:\Users\drtta\Google Диск\programming\HSE\C#\miniTerminal2\obj\Debug\net5.0\miniTerminal2.genruntimeconfig.cache
+C:\Users\engyn\source\repos\miniTerminal2\miniTerminal2\obj\Debug\net5.0\miniTerminal2.csproj.AssemblyReference.cache
