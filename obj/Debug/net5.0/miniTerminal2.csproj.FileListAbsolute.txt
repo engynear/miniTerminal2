@@ -13,3 +13,19 @@ C:\Users\engyn\source\repos\miniTerminal2\miniTerminal2\obj\Debug\net5.0\miniTer
 C:\Users\engyn\source\repos\miniTerminal2\miniTerminal2\obj\Debug\net5.0\ref\miniTerminal2.dll
 C:\Users\engyn\source\repos\miniTerminal2\miniTerminal2\obj\Debug\net5.0\miniTerminal2.pdb
 C:\Users\engyn\source\repos\miniTerminal2\miniTerminal2\obj\Debug\net5.0\miniTerminal2.genruntimeconfig.cache
+C:\Users\drtta\Google Диск\programming\HSE\C#\miniTerminal2\bin\Debug\net5.0\miniTerminal2.exe
+C:\Users\drtta\Google Диск\programming\HSE\C#\miniTerminal2\bin\Debug\net5.0\miniTerminal2.deps.json
+C:\Users\drtta\Google Диск\programming\HSE\C#\miniTerminal2\bin\Debug\net5.0\miniTerminal2.runtimeconfig.json
+C:\Users\drtta\Google Диск\programming\HSE\C#\miniTerminal2\bin\Debug\net5.0\miniTerminal2.runtimeconfig.dev.json
+C:\Users\drtta\Google Диск\programming\HSE\C#\miniTerminal2\bin\Debug\net5.0\miniTerminal2.dll
+C:\Users\drtta\Google Диск\programming\HSE\C#\miniTerminal2\bin\Debug\net5.0\ref\miniTerminal2.dll
+C:\Users\drtta\Google Диск\programming\HSE\C#\miniTerminal2\bin\Debug\net5.0\miniTerminal2.pdb
+C:\Users\drtta\Google Диск\programming\HSE\C#\miniTerminal2\obj\Debug\net5.0\miniTerminal2.csproj.AssemblyReference.cache
+C:\Users\drtta\Google Диск\programming\HSE\C#\miniTerminal2\obj\Debug\net5.0\miniTerminal2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\drtta\Google Диск\programming\HSE\C#\miniTerminal2\obj\Debug\net5.0\miniTerminal2.AssemblyInfoInputs.cache
+C:\Users\drtta\Google Диск\programming\HSE\C#\miniTerminal2\obj\Debug\net5.0\miniTerminal2.AssemblyInfo.cs
+C:\Users\drtta\Google Диск\programming\HSE\C#\miniTerminal2\obj\Debug\net5.0\miniTerminal2.csproj.CoreCompileInputs.cache
+C:\Users\drtta\Google Диск\programming\HSE\C#\miniTerminal2\obj\Debug\net5.0\miniTerminal2.dll
+C:\Users\drtta\Google Диск\programming\HSE\C#\miniTerminal2\obj\Debug\net5.0\ref\miniTerminal2.dll
+C:\Users\drtta\Google Диск\programming\HSE\C#\miniTerminal2\obj\Debug\net5.0\miniTerminal2.pdb
+C:\Users\drtta\Google Диск\programming\HSE\C#\miniTerminal2\obj\Debug\net5.0\miniTerminal2.genruntimeconfig.cache
