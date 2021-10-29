@@ -56,13 +56,19 @@ namespace miniTerminal2
 
             fileName = dir.Name + " - (" + DateTime.Now.Hour + "-" + DateTime.Now.Minute + "-" + DateTime.Now.Second + ")";
             
-            printingFiles(dir, 0);
+            try{
+                printingFiles(dir, 0);
+            }catch{
+                Console.WriteLine("Error");
+            }
+            
+            
             Console.WriteLine(output);
 
             string output_file = Directory.GetCurrentDirectory()+"/"+fileName+".txt";
 
             StreamWriter sr = new StreamWriter(output_file);
-            sr.WriteLineAsync(output);
+            sr.WriteLine(output);
             sr.Close();
         }
     }
