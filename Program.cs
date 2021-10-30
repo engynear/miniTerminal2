@@ -54,21 +54,48 @@ namespace miniTerminal2
 
         }
 
+
+        static void printingFiles(int depth){
+            depth++;
+
+            foreach (var drive in DriveInfo.GetDrives())
+            {
+                printSpaces(depth + 1);
+                try{
+                    output += "[" + drive.Name + "]" + "\n";
+                    if (depth < globalDepth)
+                    {
+                        DirectoryInfo dir = new DirectoryInfo(path: drive.Name);
+                        printingFiles(dir, depth);
+                    }
+                }catch(System.UnauthorizedAccessException){
+                    output += "└───[Access error]\n";
+                }
+
+            }
+       }
+
         static void Main(string[] args)
         {
             Console.Write("Enter directory path: ");
-            dir = new DirectoryInfo(Console.ReadLine());
-            if (!dir.Exists) throw new ArgumentException("Incorrect directory");
+            string inputDir = Console.ReadLine();
+            if (inputDir != "\\") {
+                    dir = new DirectoryInfo(inputDir);
+                    if (!dir.Exists) throw new ArgumentException("Incorrect directory");
+            }
             Console.Write("Enter depth: ");
             globalDepth = (int)Int32.Parse(Console.ReadLine());
-            output += dir.Name + "\n";
+            
+            string dirName;
+            if(inputDir == "\\") dirName = "{Your computer}";
+            else dirName = dir.Name;
+            output += dirName + "\n";
 
-            fileName = dir.Name + " - (" + DateTime.Now.Hour + "-" + DateTime.Now.Minute + "-" + DateTime.Now.Second + ")";
+            fileName = dirName.Replace(":", "").Replace("/", "").Replace("\\", "") + " - (" + DateTime.Now.Hour + "-" + DateTime.Now.Minute + "-" + DateTime.Now.Second + ")";
             
-            
-            printingFiles(dir, 0);
+            if(inputDir == "\\") printingFiles(0); 
+            else printingFiles(dir, 0);
 
-            
             
             Console.WriteLine(output);
 
