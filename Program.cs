@@ -12,15 +12,14 @@ namespace miniTerminal2
         private static string line = "    ";
         private static string lineStart = "└───";
         private static string fileName;
-        private static string output = "";
-
+        private static string output = "";    
         static void printSpaces(int count)
         {
             for (int i = 0; i < count - 2; i++)
             {
                 output += line;
             }
-            if (count != 1) output += lineStart;
+            output += lineStart;
         }
 
         static void printingFiles(DirectoryInfo dir, int depth)
@@ -30,17 +29,27 @@ namespace miniTerminal2
             foreach (var dirInfo in dir.GetDirectories())
             {
                 printSpaces(depth + 1);
-                output += "[" + dirInfo.Name + "]" + "\n";
-                if (depth < globalDepth)
-                {
-                    printingFiles(dirInfo, depth);
+                try{
+                    output += "[" + dirInfo.Name + "]" + "\n";
+                    if (depth < globalDepth)
+                    {
+                        printingFiles(dirInfo, depth);
+                    }
+                }catch(System.UnauthorizedAccessException){
+                    output += "└───[Access error]\n";
                 }
+
             }
 
             foreach (var fileInfo in dir.GetFiles())
             {
                 printSpaces(depth + 1);
-                output += fileInfo.Name + " (" + (fileInfo.Length / 8) + " B)" + "\n";
+                try{
+                    output += fileInfo.Name + " (" + (fileInfo.Length / 8) + " B)" + "\n";
+                }catch(System.IO.IOException){
+                    output += "{File access error}\n";
+                }
+                
             }
 
         }
@@ -56,11 +65,9 @@ namespace miniTerminal2
 
             fileName = dir.Name + " - (" + DateTime.Now.Hour + "-" + DateTime.Now.Minute + "-" + DateTime.Now.Second + ")";
             
-            try{
-                printingFiles(dir, 0);
-            }catch{
-                Console.WriteLine("Error");
-            }
+            
+            printingFiles(dir, 0);
+
             
             
             Console.WriteLine(output);
